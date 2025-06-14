@@ -62,12 +62,12 @@
 </head>
 <body>
   <div class="flash-box">
-    <div class="message">** ACCESSING DATA!! **</div>
+    <div class="message">** DEVICE ACCESS: OK **</div>
 
     <div class="message">** 192.168.10.1 : 8080 **</div>
 
     <div class="buttons">
-      <button onclick="endProgram()">END</button>
+      <button onclick="endProgram()">DEPLOY</button>
       <button onclick="reloadProgram()">RELOAD</button>
     </div>
   </div>
@@ -86,10 +86,9 @@
     function reloadProgram() {
       location.reload();
 
-    // Auto-refresh every 30 seconds
-<script>
+    // Auto-refresh every 10 seconds
   setInterval(() => location.reload(true), 10000);
+
 </script>
-  </script>
 </body>
 </html>
