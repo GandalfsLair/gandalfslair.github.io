@@ -4,93 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>STATIC DISPLAY VIA GITHUB PAGES</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    html, body {
-      height: 100%;
-      width: 100%;
-      background-color: black;
-      font-family: 'Arial', sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .flash-box {
-      border: 4px solid red;
-      padding: 20px;
-      text-align: center;
-      animation: flash 1s infinite;
-      max-width: 90%;
-      border-radius: 10px;
-    }
-
-
-
-    .message {
-      font-size: 1.5em;
-      margin-bottom: 20px;
-    }
-
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-      gap: 20px;
-    }
-
-    button {
-      background-color: red;
-      color: white;
-      border: none;
-      padding: 12px 20px;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-      flex: 1;
-    }
-
-    button:active {
-      background-color: darkred;
-    }
-  </style>
 </head>
 <body>
-  <div class="flash-box">
-    <div class="message">** STATIC PAGE DISPLAY **</div>
+<h1>** STATIC PAGE DISPLAY **</h1>
 
-    <div class="message">** Replace INDEX.HTML with required files for static display **</div>
+<h2>** Replace INDEX.HTML with required files for static display **<h2>
 
-    <div class="buttons">
-      <button onclick="endProgram()">DEPLOY</button>
-      <button onclick="reloadProgram()">RELOAD</button>
-      <button onclick="endProgram()">DEPLOY</button>
-      <button onclick="reloadProgram()">RELOAD</button>
-    </div>
-  </div>
 
-  <script>
-    function endProgram() {
-      // Attempt to close the window/tab (may not work on all mobile browsers)
-      if (window.close) {
-        window.close();
-      }
-      // Fallback: fade out the screen
-      document.body.innerHTML = "";
-      document.body.style.backgroundColor = "black";
-    }
-
-    function reloadProgram() {
-      location.reload();
-
-    // Auto-refresh every 10 seconds
-  setInterval(() => location.reload(true), 10000);
-
-</script>
 </body>
 </html>
